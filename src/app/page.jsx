@@ -67,8 +67,9 @@ const Page = () => {
           </div>
         </div>
       </section>
+      <Spotlight />
 
-      <Showreel />
+      {/* <Showreel /> */}
 
       <section className="featured-work">
         <div className="container">
@@ -118,7 +119,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="client-reviews-header-container">
+      {/* <section className="client-reviews-header-container">
         <div className="container">
           <div className="client-reviews-header-content">
             <div className="client-reviews-header">
@@ -162,13 +163,13 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <ClientReviews />
+      {/* <ClientReviews /> */}
 
-      <Spotlight />
+      {/* <Spotlight /> */}
 
-      <CTACard />
+      {/* <CTACard /> */}
 
       <Footer />
     </>

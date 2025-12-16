@@ -1,28 +1,28 @@
-"use client";
-import "./Spotlight.css";
-import { useRef } from "react";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import SplitType from "split-type";
+"use client"
+import "./Spotlight.css"
+import { useRef } from "react"
+import { gsap } from "gsap"
+import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+import SplitType from "split-type"
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const Spotlight = () => {
-  const spotlightRef = useRef(null);
+  const spotlightRef = useRef(null)
 
   useGSAP(
     () => {
-      const scrollTriggerInstances = [];
+      const scrollTriggerInstances = []
 
       const initSpotlight = () => {
-        new SplitType(".marquee-text-item h1", { types: "chars" });
+        new SplitType(".marquee-text-item h1", { types: "chars" })
 
         document
           .querySelectorAll(".marquee-container")
           .forEach((container, index) => {
-            const marquee = container.querySelector(".marquee");
-            const chars = container.querySelectorAll(".char");
+            const marquee = container.querySelector(".marquee")
+            const chars = container.querySelectorAll(".char")
 
             const marqueeTrigger = gsap.to(marquee, {
               x: index % 2 === 0 ? "5%" : "-15%",
@@ -33,7 +33,7 @@ const Spotlight = () => {
                 scrub: true,
               },
               force3D: true,
-            });
+            })
 
             const charsTrigger = gsap.fromTo(
               chars,
@@ -54,40 +54,40 @@ const Spotlight = () => {
                   scrub: true,
                 },
               }
-            );
+            )
 
             if (marqueeTrigger.scrollTrigger) {
-              scrollTriggerInstances.push(marqueeTrigger.scrollTrigger);
+              scrollTriggerInstances.push(marqueeTrigger.scrollTrigger)
             }
             if (charsTrigger.scrollTrigger) {
-              scrollTriggerInstances.push(charsTrigger.scrollTrigger);
+              scrollTriggerInstances.push(charsTrigger.scrollTrigger)
             }
-          });
+          })
 
-        ScrollTrigger.refresh();
-      };
+        ScrollTrigger.refresh()
+      }
 
       const waitForOtherTriggers = () => {
-        const existingTriggers = ScrollTrigger.getAll();
+        const existingTriggers = ScrollTrigger.getAll()
         const hasPinnedTrigger = existingTriggers.some(
           (trigger) => trigger.vars && trigger.vars.pin
-        );
+        )
 
         if (hasPinnedTrigger || existingTriggers.length > 0) {
-          setTimeout(initSpotlight, 300);
+          setTimeout(initSpotlight, 300)
         } else {
-          initSpotlight();
+          initSpotlight()
         }
-      };
+      }
 
-      setTimeout(waitForOtherTriggers, 100);
+      setTimeout(waitForOtherTriggers, 100)
 
       return () => {
-        scrollTriggerInstances.forEach((trigger) => trigger.kill());
-      };
+        scrollTriggerInstances.forEach((trigger) => trigger.kill())
+      }
     },
     { scope: spotlightRef }
-  );
+  )
 
   return (
     <section className="spotlight" ref={spotlightRef}>
@@ -98,7 +98,7 @@ const Spotlight = () => {
               <img src="/spotlight/spotlight-1.jpg" alt="" />
             </div>
             <div className="marquee-img-item marquee-text-item">
-              <h1>Hyperreal</h1>
+              <h1>Anti-Corruption</h1>
             </div>
             <div className="marquee-img-item">
               <img src="/spotlight/spotlight-2.jpg" alt="" />
@@ -124,7 +124,7 @@ const Spotlight = () => {
               <img src="/spotlight/spotlight-7.jpg" alt="" />
             </div>
             <div className="marquee-img-item marquee-text-item">
-              <h1>Fragmented</h1>
+              <h1>Learn</h1>
             </div>
             <div className="marquee-img-item">
               <img src="/spotlight/spotlight-8.jpg" alt="" />
@@ -138,7 +138,7 @@ const Spotlight = () => {
               <img src="/spotlight/spotlight-9.jpg" alt="" />
             </div>
             <div className="marquee-img-item marquee-text-item">
-              <h1>Softcore</h1>
+              <h1>Participate</h1>
             </div>
             <div className="marquee-img-item">
               <img src="/spotlight/spotlight-10.jpg" alt="" />
@@ -164,7 +164,7 @@ const Spotlight = () => {
               <img src="/spotlight/spotlight-15.jpg" alt="" />
             </div>
             <div className="marquee-img-item marquee-text-item">
-              <h1>Motion</h1>
+              <h1>Awareness</h1>
             </div>
             <div className="marquee-img-item">
               <img src="/spotlight/spotlight-16.jpg" alt="" />
@@ -173,7 +173,7 @@ const Spotlight = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Spotlight;
+export default Spotlight

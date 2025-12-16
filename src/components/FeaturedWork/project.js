@@ -8,7 +8,7 @@ export const projects = [
   {
     name: "Intermidiate: Chapter 3",
     description: "A reflective figure sculpted in synthetic light.",
-    img: "/featured-work/work-2.jpg",
+    img: "/pre-loader/anti-corrupt-1.jpg",
     route: "/sample-project",
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
   {
     name: "Intermidiate: Chapter 1",
     description: "A delicate strike between art and motion.",
-    img: "/featured-work/work-6.jpg",
+    img: "/pre-loader/anti-corrupt-3.jpg",
     route: "/sample-project",
   },
 ]

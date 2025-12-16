@@ -15,9 +15,9 @@ const Page = () => {
   const workItems = useMemo(
     () => [
       {
-        index: "01",
-        name: "Citychild",
-        href: "/sample-project",
+        index: "Chapter 01",
+        name: "Introduction",
+        href: `/courses/beginner/1`,
         variant: "variant-1",
         images: [
           "/work/work_1_1.jpg",
@@ -26,9 +26,9 @@ const Page = () => {
         ],
       },
       {
-        index: "02",
-        name: "Chrome Saint",
-        href: "/sample-project",
+        index: "Chapter 02",
+        name: "Theme: Fairness",
+        href: `/courses/beginner/1`,
         variant: "variant-2",
         images: [
           "/work/work_2_1.jpg",
@@ -37,9 +37,9 @@ const Page = () => {
         ],
       },
       {
-        index: "03",
+        index: "Chapter 03",
         name: "G-Dream",
-        href: "/sample-project",
+        href: `/courses/beginner/1`,
         variant: "variant-2",
         images: [
           "/work/work_3_1.jpg",
@@ -48,9 +48,9 @@ const Page = () => {
         ],
       },
       {
-        index: "04",
+        index: "Chapter 04",
         name: "Stoneface",
-        href: "/sample-project",
+        href: `/courses/beginner/1`,
         variant: "variant-3",
         images: [
           "/work/work_4_1.jpg",
@@ -59,9 +59,9 @@ const Page = () => {
         ],
       },
       {
-        index: "05",
+        index: "Chapter 05",
         name: "Amber Cloak",
-        href: "/sample-project",
+        href: `/courses/beginner/1`,
         variant: "variant-1",
         images: [
           "/work/work_5_1.jpg",
@@ -70,9 +70,9 @@ const Page = () => {
         ],
       },
       {
-        index: "06",
-        name: "Paper Blade",
-        href: "/sample-project",
+        index: "Chapter 06",
+        name: "Quiz",
+        href: `/courses/beginner/1`,
         variant: "variant-2",
         images: [
           "/work/work_6_1.jpg",
