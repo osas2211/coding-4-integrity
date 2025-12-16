@@ -469,11 +469,16 @@ const Menu = ({ pageRef }) => {
             }}
             className="text-black gap-0 flex items-center "
           >
-            <p>{"<"}</p>
+            {/* <p>{"<"}</p>
             <p className="text-red-500 text-[15px]!">Coding</p>
             <p className="text-[15px]!">4</p>
             <p className="text-[15px]! text-red-600">Integrity</p>
-            <p>{"/>"}</p>
+            <p>{"/>"}</p> */}
+            <img
+              src="https://knowledgefound.org/images/logos/Bird-Bulb-Logo-Knowledge-Foundation.png"
+              alt=""
+              className="w-[50px]!"
+            />
           </a>
         </div>
 
