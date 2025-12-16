@@ -9,6 +9,7 @@ export const sampleCourses = {
     rating: 4.9,
     reviewsCount: 1845,
     studentsCount: 8920,
+    nextCourseId: "understanding-trust-and-power",
     description: "This foundational module introduces young learners to the essential concepts of fairness, honesty, and integrity through engaging, age-appropriate content. Children will explore what it means to be fair and honest in their daily lives, understand the basics of corruption as the abuse of entrusted power, and learn how their personal choices contribute to building a just and ethical community. Through interactive games, storytelling, and real-world scenarios, students will develop a strong moral compass and recognize their role in preventing corruption by practicing integrity in every decision they make.",
     creator: {
       name: "Coding 4 Integrity Team",
@@ -25,6 +26,8 @@ export const sampleCourses = {
       image: "/api/placeholder/400/300",
       video: "#"
     },
+    overviewVideo: "/chap-1.mp4",
+    learningVideo: "/chap-1.mp4",
     moneyBackGuarantee: 30,
     courseIncludes: [
       { icon: "language", label: "English" },
@@ -139,6 +142,7 @@ export const sampleCourses = {
     rating: 4.9,
     reviewsCount: 1623,
     studentsCount: 7845,
+    nextCourseId: "when-resources-are-misused",
     description: "This module builds on the foundations of personal integrity by introducing children to the simple definition of corruption: the abuse of entrusted power for private gain. Through engaging animated scenarios and interactive activities, young learners will explore how authority works in their immediate environment—from games and family settings to school and community. Students will learn to recognize who holds positions of trust and power in their daily lives, understand the responsibilities that come with authority, and identify the consequences when that trust is broken. By working through relatable situations like 'The Fair Prize' story, children develop the ethical awareness and courage needed to spot unfairness and take appropriate action to restore justice in their communities.",
     creator: {
       name: "Coding 4 Integrity Team",
@@ -155,6 +159,8 @@ export const sampleCourses = {
       image: "/api/placeholder/400/300",
       video: "#"
     },
+    overviewVideo: "/chap-2.mp4",
+    learningVideo: "/chap-2.mp4",
     moneyBackGuarantee: 30,
     courseIncludes: [
       { icon: "language", label: "English" },
@@ -269,6 +275,7 @@ export const sampleCourses = {
     rating: 4.8,
     reviewsCount: 1542,
     studentsCount: 7320,
+    nextCourseId: "bribes-and-favors",
     description: "This module helps children recognize when shared resources—like school funds, playground equipment, or community materials—are deliberately stolen or misused. Building on earlier concepts of personal integrity and abuse of power, students learn to identify material harm within their community through concrete examples of theft, embezzlement, and fraud. Through engaging visual puzzles and interactive scenarios, young learners discover how the misuse of resources meant for everyone stops good things from happening and understand who gets hurt when corruption causes real damage to their schools and neighborhoods.",
     creator: {
       name: "Coding 4 Integrity Team",
@@ -398,6 +405,7 @@ export const sampleCourses = {
     rating: 4.9,
     reviewsCount: 1698,
     studentsCount: 7856,
+    nextCourseId: "speaking-up-and-accountability",
     description: "This module introduces children to the important concepts of bribery and favors as unfair exchanges that break the fundamental rule of equality in their community. Through interactive storytelling and decision-making activities, young learners discover how even small bribes or favors create preferential treatment that disrupts fairness for everyone. Students explore real-world scenarios where rules are meant to ensure equal treatment, and learn why accepting or offering bribes—no matter how small—violates the core principle that rules should be the same for everyone. By understanding these concepts, children develop the ethical awareness needed to recognize and refuse unfair exchanges in their daily lives.",
     creator: {
       name: "Coding 4 Integrity Team",

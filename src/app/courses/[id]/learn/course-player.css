@@ -1,0 +1,435 @@
+.course-player-page {
+  min-height: 100vh;
+  background: #F8F9FA;
+}
+
+.player-container {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.course-sidebar-nav {
+  background: white;
+  border-right: 1px solid #E0E0E0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.sidebar-header {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.course-progress {
+  font-size: 0.875rem;
+  color: #666;
+  font-family: "PP Neue Montreal";
+}
+
+.sections-list {
+  padding: 1rem 0;
+}
+
+.section-item {
+  margin-bottom: 1.5rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: #F8F9FA;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.section-duration {
+  font-size: 0.8rem;
+  color: #666;
+  font-family: "PP Neue Montreal";
+}
+
+.lessons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lesson-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.lesson-item:hover {
+  background: #F8F9FA;
+}
+
+.lesson-item.active {
+  background: #FFF5F5;
+  border-left-color: #FF1493;
+}
+
+.lesson-item.completed .lesson-icon {
+  color: #4CAF50;
+}
+
+.lesson-icon {
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.lesson-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.lesson-name {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.lesson-item.active .lesson-name {
+  color: #FF1493;
+  font-weight: 600;
+}
+
+.lesson-duration {
+  font-size: 0.75rem;
+  color: #999;
+  font-family: "PP Neue Montreal";
+}
+
+/* Main Content */
+.course-main-content {
+  background: #F8F9FA;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.video-player-wrapper {
+  position: relative;
+  background: #000;
+  aspect-ratio: 16/9;
+  max-height: 70vh;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  padding: 1.5rem 1rem 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #FF1493;
+  border-radius: 2px;
+  transition: width 0.1s;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls-left,
+.controls-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.control-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.control-btn:hover {
+  opacity: 0.8;
+}
+
+.time-display {
+  color: white;
+  font-size: 0.875rem;
+  font-family: "PP Neue Montreal";
+}
+
+/* Lesson Content */
+.lesson-content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.lesson-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.lesson-type-badge {
+  background: #E3F2FD;
+  color: #1976D2;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: "PP Neue Montreal";
+}
+
+.lesson-description {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.lesson-description h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.lesson-description h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.lesson-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: "PP Neue Montreal";
+}
+
+.takeaways-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.takeaways-list li {
+  padding: 0.75rem 0 0.75rem 2rem;
+  position: relative;
+  font-family: "PP Neue Montreal";
+  color: #333;
+  line-height: 1.6;
+}
+
+.takeaways-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-weight: 700;
+}
+
+.lesson-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-family: "PP Neue Montreal";
+}
+
+.btn-primary {
+  background: #FF1493;
+  color: white;
+  flex: 1;
+}
+
+.btn-primary:hover {
+  background: #E01282;
+}
+
+.btn-secondary {
+  background: white;
+  color: #333;
+  border: 1px solid #E0E0E0;
+}
+
+.btn-secondary:hover {
+  background: #F8F9FA;
+}
+
+.mobile-sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 1rem;
+  z-index: 1000;
+  background: #FF1493;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.3);
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+
+.mobile-sidebar-toggle:hover {
+  background: #E01282;
+  box-shadow: 0 6px 16px rgba(255, 20, 147, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .player-container {
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mobile-sidebar-toggle {
+    display: flex;
+    top: 10px;
+  }
+
+  .player-container {
+    grid-template-columns: 1fr;
+  }
+
+  .course-sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 380px;
+    height: 100vh;
+    border-right: 1px solid #E0E0E0;
+    border-bottom: none;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  .course-sidebar-nav.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .course-main-content {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  .video-player-wrapper {
+    max-height: 50vh;
+  }
+
+  .lesson-content {
+    padding: 1.5rem;
+  }
+
+  .lesson-title {
+    font-size: 1.5rem;
+  }
+
+  .lesson-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}

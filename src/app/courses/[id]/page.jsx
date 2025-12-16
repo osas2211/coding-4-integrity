@@ -23,6 +23,7 @@ export default function CoursePage({ params }) {
   // Get course data
   const courseId = resolvedParams?.id || "honest-and-fairness";
   const course = sampleCourses[courseId] || sampleCourses["honest-and-fairness"];
+  const introVideoPath = course.overviewVideo || "/video.mp4";
 
   // Render tab content based on active tab
   const renderTabContent = (activeTab) => {
@@ -49,7 +50,7 @@ export default function CoursePage({ params }) {
       {/* Intro Video Overlay */}
       {showIntroVideo && (
         <VideoIntro
-          videoPath="/video.mp4"
+          videoPath={introVideoPath}
           onComplete={handleVideoComplete}
         />
       )}

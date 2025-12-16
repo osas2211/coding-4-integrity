@@ -27,6 +27,12 @@
   object-fit: cover;
 }
 
+.preview-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .preview-button {
   position: absolute;
   top: 50%;
@@ -128,6 +134,29 @@
 
 .wishlist-btn:hover svg {
   color: #FF1493;
+}
+
+.next-course-btn {
+  width: 100%;
+  background: white;
+  color: #FF1493;
+  border: 2px solid #FF1493;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 1.25rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.next-course-btn:hover {
+  background: #FFF5F5;
+  border-color: #E01282;
+  color: #E01282;
 }
 
 .guarantee {
