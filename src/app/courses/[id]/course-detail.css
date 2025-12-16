@@ -1,0 +1,58 @@
+.course-page {
+  min-height: 100vh;
+  background: #F8F9FA;
+  padding-bottom: 4rem;
+}
+
+.course-module-page {
+  background: #fff;
+}
+
+.module-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Legacy styles for old course page structure */
+.course-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.course-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.course-main {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.course-aside {
+  /* Sidebar styling handled in CourseSidebar component */
+}
+
+@media (max-width: 1000px) {
+  .course-container {
+    padding: 0 1rem;
+  }
+
+  .course-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .course-main {
+    padding: 1.5rem;
+  }
+
+  .course-aside {
+    order: -1; /* Show sidebar above content on mobile */
+  }
+}

@@ -1,0 +1,51 @@
+.tab-navigation {
+  margin: 2rem 0;
+}
+
+.tab-list {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-button:hover {
+  color: #333;
+}
+
+.tab-button--active {
+  color: #000;
+  font-weight: 500;
+  border-bottom-color: #000;
+}
+
+.tab-content {
+  padding: 2rem 0;
+}
+
+@media (max-width: 1000px) {
+  .tab-list {
+    gap: 1rem;
+    overflow-x: auto;
+  }
+
+  .tab-button {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .tab-content {
+    padding: 1.5rem 0;
+  }
+}

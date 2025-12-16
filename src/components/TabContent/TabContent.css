@@ -1,0 +1,385 @@
+.overview-tab,
+.content-tab,
+.instructor-tab,
+.reviews-tab {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.course-overview-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #E0E0E0;
+}
+
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.section-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.requirements-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.requirements-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Course Content Tab */
+.curriculum-section {
+  margin-bottom: 2rem;
+}
+
+.section-accordion {
+  border: 1px solid #E0E0E0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background: #FAFAFA;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.accordion-header:hover {
+  background: #F5F5F5;
+}
+
+.accordion-header.active {
+  background: #F0F0F0;
+}
+
+.accordion-title {
+  font-weight: 600;
+  color: #000;
+  font-size: 1rem;
+}
+
+.accordion-meta {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.accordion-content {
+  padding: 0 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content.active {
+  max-height: 500px;
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.lesson-list {
+  list-style: none;
+  padding: 0;
+}
+
+.lesson-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.lesson-item:last-child {
+  border-bottom: none;
+}
+
+.lesson-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lesson-icon {
+  color: #666;
+}
+
+.lesson-title {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.lesson-duration {
+  color: #999;
+  font-size: 0.875rem;
+}
+
+/* Instructor Tab */
+.instructor-profile {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.instructor-avatar-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.instructor-info {
+  flex: 1;
+}
+
+.instructor-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.instructor-title {
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.instructor-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+}
+
+.stat-icon {
+  color: #666;
+}
+
+.instructor-bio {
+  line-height: 1.6;
+  color: #333;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.expertise-badge {
+  background: #F0F0F0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Reviews Tab */
+.reviews-summary {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  background: #FAFAFA;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.rating-overview {
+  text-align: center;
+}
+
+.rating-number-large {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.rating-stars-large {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+
+.rating-count-text {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.rating-breakdown {
+  flex: 1;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.rating-label {
+  min-width: 60px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.rating-bar-track {
+  flex: 1;
+  height: 8px;
+  background: #E0E0E0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rating-bar-fill {
+  height: 100%;
+  background: #FFA500;
+  transition: width 0.3s ease;
+}
+
+.rating-percentage {
+  min-width: 40px;
+  text-align: right;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review-item {
+  padding: 1.5rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 0.5rem;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reviewer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #666;
+}
+
+.reviewer-info {
+  flex: 1;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.review-text {
+  line-height: 1.6;
+  color: #333;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #666;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.empty-state-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state-text {
+  color: #666;
+}
+
+@media (max-width: 1000px) {
+  .instructor-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .instructor-stats {
+    justify-content: center;
+  }
+
+  .reviews-summary {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

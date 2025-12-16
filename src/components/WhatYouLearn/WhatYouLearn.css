@@ -1,0 +1,62 @@
+.what-you-learn {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #FAFAFA;
+  border-radius: 1rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.title-icon {
+  font-size: 1.75rem;
+}
+
+.learning-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.learning-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background: #4CAF50;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.learning-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+  font-style: italic;
+}
+
+@media (max-width: 1000px) {
+  .learning-items {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .what-you-learn {
+    padding: 1.5rem;
+  }
+}

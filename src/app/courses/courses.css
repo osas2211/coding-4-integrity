@@ -1,0 +1,103 @@
+.courses-page {
+  min-height: 100vh;
+  background: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+.courses-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0 4rem;
+  position: relative;
+}
+
+.courses-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--base-500) 50%,
+    transparent
+  );
+  opacity: 0.2;
+}
+
+.courses-hero-content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.courses-hero h1 {
+  font-size: clamp(3rem, 10vw, 8rem);
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #000 0%, var(--base-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.courses-subtitle {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--base-400);
+  font-family: "PP Neue Montreal";
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.6;
+}
+
+.age-groups-section {
+  padding: 4rem 0 8rem;
+  position: relative;
+}
+
+.age-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.courses-footer {
+  padding: 4rem 0 6rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--base-300);
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "PP Neue Montreal";
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.8;
+}
+
+@media (max-width: 1000px) {
+  .courses-hero {
+    padding: 6rem 0 3rem;
+    min-height: 40vh;
+  }
+
+  .age-groups-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .courses-footer {
+    padding: 3rem 0 4rem;
+  }
+}

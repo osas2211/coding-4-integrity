@@ -1,0 +1,124 @@
+.course-module {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.module-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.module-meta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.age-group,
+.module-number {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #666;
+  font-family: "PP Neue Montreal";
+}
+
+.module-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #000;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.module-description {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-family: "PP Neue Montreal";
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.course-title-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "PP Neue Montreal";
+  text-transform: none;
+}
+
+.module-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Section Base Styles */
+.course-section {
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.course-section:hover {
+  border-color: #e0e0e0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.section-number {
+  background: var(--accent-1);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Big Shoulders Display";
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  color: #000;
+  margin: 0;
+  line-height: 1.3;
+}
+
+@media (max-width: 1000px) {
+  .course-module {
+    padding: 3rem 1.5rem;
+  }
+
+  .course-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .module-meta {
+    flex-direction: column;
+    align-items: center;
+  }
+}

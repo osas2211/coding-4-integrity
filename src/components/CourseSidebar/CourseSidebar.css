@@ -1,0 +1,188 @@
+.course-sidebar {
+  position: sticky;
+  top: 2rem;
+}
+
+.sidebar-card {
+  border: 1px solid #E0E0E0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-content {
+  padding: 0 !important;
+}
+
+.preview-container {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: #F5F5F5;
+  overflow: hidden;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.preview-button:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.pricing-section {
+  padding: 1.5rem;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.price-info {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.original-price {
+  font-size: 1.125rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.discount-badge {
+  background: #4CAF50;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.start-course-btn {
+  flex: 1;
+  background: #FF1493;
+  color: white;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+.start-course-btn:hover {
+  background: #E01282;
+}
+
+.wishlist-btn {
+  background: transparent;
+  border: 1px solid #E0E0E0;
+  border-radius: 2rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.wishlist-btn:hover {
+  background: #F5F5F5;
+  border-color: #FF1493;
+}
+
+.wishlist-btn:hover svg {
+  color: #FF1493;
+}
+
+.guarantee {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.guarantee svg {
+  color: #4CAF50;
+}
+
+.course-includes {
+  padding: 1.5rem;
+}
+
+.includes-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.includes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.include-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.include-icon {
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.include-label {
+  line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+  .course-sidebar {
+    position: static;
+    margin-top: 2rem;
+  }
+}
